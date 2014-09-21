@@ -26,29 +26,20 @@ Simple Jekyll local testing (to start up localhost:4040)
 * `jekyll serve -w`
 
 
-Posting project page with github and jekyll
+Posting github user page with jekyll
 
-* Create a public repo (e.g. ka_pages)
+* Create a public repo called username.github.io
 * Clone it to your computer
     * `git clone [repo path]`
-* Switch to gh-pages 
-    * `git checkout -b gh-pages`
-
 * put static page file to that directory
 * Add files to git 
     * `git add --all`
-
 * Commit changes
     * `git commit -m "first commit"`
-
-* push it to gh-pages branch
-    * `git push origin gh-pages`
-
-
+* push it to master branch
+    * `git push origin master`
 * view your page at: 
-    * http://kahoau.github.io/ka_web/
-
-* https://help.github.com/articles/creating-project-pages-manually
+    * http://username.github.io
 
 
 Push modified changes
@@ -78,5 +69,6 @@ More references:
 * http://www.smashingmagazine.com/2014/08/01/build-blog-jekyll-github-pages/
 * https://github.com/jekyll/jekyll/wiki/sites 
 * http://daringfireball.net/projects/markdown/syntax
+* https://help.github.com/articles/creating-project-pages-manually
 
 
