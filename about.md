@@ -1,11 +1,20 @@
 ---
 layout: page
-title: About
+title: About Ka
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+Over 7 years of experience working on System Design and Development.
+Experience in Scalable Enterprise Content Management System, Portal customizations, Portal upgrade and Integration of Portals with external systems. 
+Familiar with business process improvements.
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+Familiar with business process improvements.
+Expertises include user requirement analysis, object-oriented design, job flow design and database design.
+
+Proficient in Java, Spring 3.x, Spring MVC, Spring batch, Java jsp/servlet, freemarker, Webservices, Struts2, Hibernate, Activemq, JMS, maven, Javascript, HTML, CSS, XML, Tomcat, Jboss, Unix Shell Scripting
+Also familiar with framework such as EJB 3.0 and various RDBMS such as Oracle, Postgres, MSSQL, MySQL and Sybase.
+
+Working experience in Project Management
+
+Knowledgeable in Finance and Accounting.
