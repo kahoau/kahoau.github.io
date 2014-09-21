@@ -16,7 +16,7 @@ Jekyll quick start guide and generator
 * [jekyll quickstart](http://jekyllrb.com/docs/quickstart/)
 
 
-**Simple Jekyll local testing (to start up localhost:4040)**
+Simple Jekyll local testing (to start up localhost:4040)
 
 * `jekyll build`
 * `jekyll build --watch`
