@@ -54,8 +54,8 @@ Posting project page with github and jekyll
 Push modified changes
 
 * `git commit -am "commit message"`
-* Providing the -a option to the git commit command makes Git automatically stage every file that is already tracked before doing the commi
-* http://stackoverflow.com/questions/4873976/how-to-commit-only-modified-and-not-new-or-deleted-files
+    * Providing the -a option to the git commit command makes Git automatically stage every file that is already tracked before doing the commi
+    * http://stackoverflow.com/questions/4873976/how-to-commit-only-modified-and-not-new-or-deleted-files
 
 Editer for Markdown 
 
