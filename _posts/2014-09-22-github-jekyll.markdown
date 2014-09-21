@@ -4,22 +4,79 @@ title:  "Github host jekyll generated web pages"
 date:   2014-09-22 13:37:45
 categories: jekyll update
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve --watch`, which launches a web server and auto-regenerates your site when a file is updated.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+Install Jekyll on windows
 
-Jekyll also offers powerful support for code snippets:
+* [jekyll installation on window ref1](http://jekyllrb.com/docs/windows/)
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+* [jekyll installation on window ref2](http://jekyll-windows.juthilo.com/) 
+ 
+Jekyll quick start guide and generator
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
+* [jekyll quickstart](http://jekyllrb.com/docs/quickstart/)
 
-[jekyll]:      http://jekyllrb.com
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-help]: https://github.com/jekyll/jekyll-help
+
+Simple Jekyll local testing (to start up localhost:4040)
+
+* `jekyll build`
+* `jekyll build --watch`
+* `jekyll build -w`
+* `jekyll serve`
+* `jekyll serve --watch`
+* `jekyll serve -w`
+
+
+Posting project page with github and jekyll
+
+* Create a public repo (e.g. ka_pages)
+* Clone it to your computer
+    * `git clone [repo path]`
+* Switch to gh-pages 
+    * `git checkout -b gh-pages`
+
+* put static page file to that directory
+* Add files to git 
+    * `git add --all`
+
+* Commit changes
+    * `git commit -m "first commit"`
+
+* push it to gh-pages branch
+    * `git push origin gh-pages`
+
+
+* view your page at: 
+    * http://kahoau.github.io/ka_web/
+
+* https://help.github.com/articles/creating-project-pages-manually
+
+
+Push modified changes
+
+* `git commit -am "commit message"`
+* Providing the -a option to the git commit command makes Git automatically stage every file that is already tracked before doing the commi
+* http://stackoverflow.com/questions/4873976/how-to-commit-only-modified-and-not-new-or-deleted-files
+
+Editer for Markdown 
+
+* http://brackets.io/?lang=en
+
+Warn and Note: 
+
+* Need correct baseurl in _config.xml
+* baseurl: "http://kahoau.github.io/jekyll_test/" # the subpath of your site, e.g. /blog/
+
+
+More references:
+
+* https://github.com/jekyll/jekyll/issues/1336
+* https://github.com/briggslab/briggslab.github.io/issues/37
+* https://github.com/jekyll/jekyll/issues/1336
+* http://joshualande.com/jekyll-github-pages-poole/
+* http://www.smashingmagazine.com/2014/08/01/build-blog-jekyll-github-pages/
+* http://aviaryan.github.io/
+* http://www.smashingmagazine.com/2014/08/01/build-blog-jekyll-github-pages/
+* https://github.com/jekyll/jekyll/wiki/sites 
+* http://daringfireball.net/projects/markdown/syntax
+
+
