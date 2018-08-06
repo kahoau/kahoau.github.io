@@ -1,4 +1,4 @@
-# ceirms_web_webpack
+# vue web_webpack
 
 > A Vue.js project
 
