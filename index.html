@@ -18,8 +18,9 @@
     navigator.mediaDevices.enumerateDevices()
         .then(function(devices) {
             devices.forEach(function(device) {
-                document.write("device.kind + \": \" + device.label +\n" +
-                    "\" id = \" + device.deviceId)");
+                document.write(device.kind + ": " + device.label +
+                    "id = " + device.deviceId);
+                document.write("<br>");
             });
         })
         .catch(function(err) {
