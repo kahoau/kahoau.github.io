@@ -9,23 +9,20 @@
 </head>
 <body>
 <script>
-    if (!navigator.mediaDevices || !navigator.mediaDevices.enumerateDevices) {
-        document.write("enumerateDevices() not supported.");
-    }
+    let stream = null
 
-    // List cameras and microphones.
-
-    navigator.mediaDevices.enumerateDevices()
-        .then(function(devices) {
-            devices.forEach(function(device) {
-                document.write(device.kind + ": " + device.label +
-                    "id = " + device.deviceId);
-                document.write("<br>");
-            });
+    navigator.mediaDevices.getUserMedia({audio: false, video: true})
+        .then(s => {
+            stream = s
+            navigator.mediaDevices.enumerateDevices().then(devices => {
+                devices.forEach(device => {
+                    document.write('device.label :'+ device.label)
+                })
+            })
         })
-        .catch(function(err) {
-            document.write(err.name + ": " + err.message);
-        });
+        .catch(error => {
+            console.log('Error :', error)
+        })
 </script>
 </body>
 </html>
