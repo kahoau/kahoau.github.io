@@ -15,7 +15,7 @@
         .then(() => navigator.mediaDevices.enumerateDevices())
         .then(devices => {
             devices.forEach((device, n) => {
-                document.write('Device '+ n + ':' + "kind: " +device.kind + " label: " + device.label);
+                document.write('Device '+ n + ' : ' + "kind: " +device.kind + " label: " + device.label);
                 document.write('<br>')
             })
         })
