@@ -9,20 +9,22 @@
 </head>
 <body>
 <script>
-    let stream = null
-
-    navigator.mediaDevices.getUserMedia({audio: false, video: true})
-        .then(s => {
-            stream = s
-            navigator.mediaDevices.enumerateDevices().then(devices => {
-                devices.forEach(device => {
-                    document.write('device.label :'+ device.label)
-                })
+    var stream;
+    navigator.mediaDevices.getUserMedia({ video:true })
+        .then(s => (stream = s), e => console.log(e.message))
+        .then(() => navigator.mediaDevices.enumerateDevices())
+        .then(devices => {
+            devices.forEach((device, n) => {
+                document.write('Device '+ n + ':' +JSON.stringify(device, null, 2));
+                document.write('<br>')
+                if(device.getCapabilities) {
+                    document.write('  Capabilities: ' + JSON.stringify(device.getCapabilities(), null, 4));
+                    document.write('<br>')
+                }
             })
         })
-        .catch(error => {
-            console.log('Error :', error)
-        })
+        .catch(e => console.log(e));
+
 </script>
 </body>
 </html>
