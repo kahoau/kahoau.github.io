@@ -15,13 +15,6 @@
         .then(() => navigator.mediaDevices.enumerateDevices())
         .then(devices => {
             devices.forEach((device, n) => {
-
-                if (device.label.match(/\bback\b/) && device.label.match(/\b0\b/)) {
-                    document.write('xxx')
-                    document.write('<br>')
-                }
-
-
                 document.write('Device '+ n + ' : ' + "kind: " +device.kind + " label: " + device.label);
                 document.write('<br>')
             })
